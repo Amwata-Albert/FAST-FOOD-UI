@@ -7,10 +7,21 @@
 }
 .card{
     background-color: transparent; 
+    padding-left: 10%;
 }
-h1{
-    color: tomato;
+h3{
+    color: orange ;
 }
-button{
-    background-color: tomato;
+.button2{
+    background-color: orange;
+    margin-left: 5%;
+}
+.button1{
+    background-color: orange;
+}
+.orderlist{
+    padding-top: 5%;
+}
+img{
+    width: 20%;
 }
