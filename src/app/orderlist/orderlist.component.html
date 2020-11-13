@@ -1,0 +1,23 @@
+<div class="container-fluid">
+
+  <h1>OrderList</h1>
+  <hr>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card" *ngFor='let orderlist of orderlists'>
+        <div class="card-body">
+          <h1 class="card-title"> {{orderlist.order_id}} .{{orderlist.food}}</h1>
+          <p class="card-text">Quantity: {{orderlist.quantity}}</p>
+          <p class="card-text">Address: {{orderlist.address}}</p>
+
+          <button (click)='orderAccepted(true)'>Accept</button>
+          <button (click)='orderDeclined(true)'>Decline</button>
+
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>

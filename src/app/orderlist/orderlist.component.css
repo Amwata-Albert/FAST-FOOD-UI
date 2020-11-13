@@ -1,0 +1,16 @@
+.container-fluid{
+    background-image: url(https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466_960_720.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+}
+.card{
+    background-color: transparent; 
+}
+h1{
+    color: tomato;
+}
+button{
+    background-color: tomato;
+}
