@@ -1,12 +1,13 @@
 .landing{
-    background-image: url(https://images.pexels.com/photos/255501/pexels-photo-255501.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-image: url(https://c8.alamy.com/comp/JGKCRN/asian-food-served-on-old-wooden-table-top-view-space-for-text-chinese-JGKCRN.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 }
 .button{
     border-radius: 20%;
-    padding: 10px;
+    padding-left: 10px;    padding-left: 10px;
+
     background-color: rgb(235, 88, 20);
 }
 .title{
@@ -17,5 +18,8 @@
     width: 20px;
 }
 .text{
-    font-size: 100px;
+    font-size: 20px;
+}
+.jumbotron{
+    width: 50%;
 }
