@@ -10,21 +10,21 @@ export class RegisterComponent implements OnInit {
 
 
   public user: any;
-  constructor(public _userService: RegisterService) { }
+  constructor(public _registerService: RegisterService) { }
 
   ngOnInit() {
   	this.user = {
       first_name: '',
       last_name: '',
       email: '',
-      password: ''
+      password1: ''
       
     }
-    this._userService.errors=[]
+    this._registerService.errors=[]
   }
   registerUser() {
   	console.log(this.user)
-    this._userService.registerUser({'first_name': this.user.first_name, 'last_name': this.user.last_name,'email': this.user.email,'password': this.user.password});
+    this._registerService.registerUser({'first_name': this.user.first_name, 'last_name': this.user.last_name,'email': this.user.email,'password': this.user.password1});
    }
 
 }
