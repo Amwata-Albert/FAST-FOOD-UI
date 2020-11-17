@@ -8,10 +8,14 @@
 .add{
     margin-top: 40%;
 }
-.add1{
+.add1,h5{
     color: white;
     font-family: 'Special Elite', cursive;
     text-align: center;
+}
+
+#link{
+    color: rgb(0, 255, 242);
 }
 
 .panel{
