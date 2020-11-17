@@ -1,62 +1,47 @@
 <div class="container-fluid">
-<div class="container">
-    <div class="row centered-form">
-    <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
-        <div class="panel panel-default add">
-            <div class="panel-heading">
-                <p *ngFor='let err of _registerService.errors'>Registration unsuccessful</p>
-                    <h4 class="panel-title add1">FAST-FOOD-FAST REGISTER</h4>
-                     </div>
-                     <div class="panel-body">
-                    <form regForm = 'ngForm'>
-                        <div class="row">
-                            <div class="col-xs-6 col-sm-6 col-md-6">
-                                <div class="form-group">
-                                    <input type="text" [(ngModel)] = "user.first_name" name="first_name" id="first_name" class="form-control input-sm" placeholder="First Name" #first_name='ngModel'>
+    <div class="container">
+        <div class="row centered-form">
+            <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+                <div class="panel panel-default add">
+                    <div class="panel-heading">
+                        <p *ngFor='let err of _registerService.errors'>Registration unsuccessful</p>
+                        <h4 class="panel-title add1">FAST-FOOD-FAST REGISTER</h4>
+                        <div class="panel-body">
+                            <form regForm = 'ngForm'>
+                                <div class="row">
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" [(ngModel)] = "user.first_name" name="first_name" id="first_name" class="form-control input-sm" placeholder="First Name" #first_name='ngModel'>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" [(ngModel)] = "user.last_name" name="last_name" id="last_name" class="form-control input-sm" placeholder="Last Name" #last_name='ngModel'>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6">
-                                <div class="form-group">
-                                    <input type="text" [(ngModel)] = "user.last_name" name="last_name" id="last_name" class="form-control input-sm" placeholder="Last Name" #last_name='ngModel'>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="form-group">
-                            <input type="email" [(ngModel)] = "user.email" name="email" id="email" class="form-control input-sm" placeholder="Email Address" #email='ngModel'>
-                        </div>
-                        <!-- <div class="form-group input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-                            </div>
-                            <select class="form-control">
-                                <option>Admin</option>
-                                <option>Customer</option>
-                            </select>
-                        </div> -->
-
-                        <div class="row">
-                            <div class="col-xs-6 col-sm-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="password" [(ngModel)] = "user.password1" name="password1" id="password1" class="form-control input-sm" placeholder="Password" #password1='ngModel'>
+                                    <input type="email" [(ngModel)] = "user.email" name="email" id="email" class="form-control input-sm" placeholder="Email Address" #email='ngModel'>
                                 </div>
-                            </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6">
-                                <div class="form-group">
-                                    <input type="password" [(ngModel)] = "user.password1" name="password1" id="password1" class="form-control input-sm" placeholder="Confirm Password" #password1='ngModel'>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                        <div class="form-group">
+                                            <input type="password" [(ngModel)] = "user.password1" name="password1" id="password1" class="form-control input-sm" placeholder="Password" #password1='ngModel'>
+                                        </div>
+                                    </div>
                                 </div>
+                                
+                                <button (click)='registerUser()' type="button" class="btn btn-danger btn-block">Register</button>
+                            
+                            </form>
+                            <div>
+                                <h5>Have an account?<a id="link" routerLink="/login" routerLinkActive="active" > Log in</a></h5>
                             </div>
                         </div>
-                        
-                        <input type="submit" value="Register" class="btn btn-danger btn-block">
-                    
-                    </form>
-                    <div>
-                        <h5>Have an account?<a id="link" routerLink="/login" routerLinkActive="active" > Log in</a></h5>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </div>
