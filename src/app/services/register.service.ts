@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
+import { environment } from '../../environments/environment';
 import { Router } from '@angular/router';
 
 @Injectable({
@@ -35,11 +36,11 @@ export class RegisterService {
 
 // Uses http.post() to get an auth token from drf-jwt endpoint
 public login(user) {
-  this.http.post(`http://127.0.0.1:8000/api/token/`, JSON.stringify(user), this.httpOptions).subscribe(
+  this.http.post(`${environment.apiUrl}/api/token/`, JSON.stringify(user), this.httpOptions).subscribe(
     data => {
       this.updateData(data['access'],);
       this.refresh=data['refresh']
-      this.router.navigate(['/register'])
+      this.router.navigate(['/navbar'])
       
     },
     err => {
@@ -51,7 +52,7 @@ public login(user) {
 
 
 public registerUser(user) {
-  this.http.post(`http://127.0.0.1:8000/api/register`, JSON.stringify(user), this.httpOptions).subscribe(
+  this.http.post(`${environment.apiUrl}/api/register`, JSON.stringify(user), this.httpOptions).subscribe(
     data => {
       alert('User registered successfully')
       this.router.navigate(['/login'])
@@ -64,7 +65,7 @@ public registerUser(user) {
 }
 // Refreshes the JWT token, to extend the time the user is logged in
 public refreshToken() {
-  this.http.post(`http://127.0.0.1:8000/api/token/refresh/`, JSON.stringify({refresh: this.refresh}), this.httpOptions).subscribe(
+  this.http.post(`${environment.apiUrl}/api/token/refresh/`, JSON.stringify({refresh: this.refresh}), this.httpOptions).subscribe(
     data => {
       this.updateData(data['access']);
     },
@@ -92,7 +93,7 @@ private updateData(token) {
   this.user_id = token_decoded.user_id;
   localStorage.current_userid=this.user_id
 
-  this.http.get(`http://127.0.0.1:8000/api/user/${token_decoded.user_id}`, this.httpOptions).subscribe(
+  this.http.get(`${environment.apiUrl}/api/user/${token_decoded.user_id}`, this.httpOptions).subscribe(
     data => {
       localStorage.current_user=data
 
