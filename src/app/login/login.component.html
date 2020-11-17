@@ -8,37 +8,48 @@
 	<div>
 		<div class="card">
 			<div class="card-header">
+				<p *ngFor='let err of _registerService.errors'>Invalid credentials</p>
 				<h3>FAST FOOD SIGN IN</h3>
 			</div>
 			<div class="card-body">
-				<form>
-					<div class="input-group form-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-user"></i></span>
+				<div *ngIf="!_registerService.token">
+					<form class="form-signin" method="POST">
+						<div class="input-group form-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text"><i class="fas fa-user"></i></span>
+							</div>
+							<input type="text" [(ngModel)]="user.email" name="login-email" class="form-control" placeholder="email" required>
+							<span *ngFor="let error of _registerService.errors.email"><br />
+								{{ error }}</span>
+							
 						</div>
-						<input type="text" class="form-control" placeholder="email">
-						
-					</div>
-					<div class="input-group form-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-key"></i></span>
+						<div class="input-group form-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text"><i class="fas fa-key"></i></span>
+							</div>
+							<input type="password" name="login-password" [(ngModel)]="user.password" id="inputPassword" class="form-control" placeholder="password" required>
 						</div>
-						<input type="password" class="form-control" placeholder="password">
-					</div>
-					<div class="row align-items-center remember">
-						<input type="checkbox">Remember Me
-					</div>
-					<div class="form-group">
-						<input type="submit" value="Login" class="btn float-right login_btn">
-					</div>
-				</form>
+						<div class="row align-items-center remember">
+							<input type="checkbox">Remember Me
+						</div>
+						<div class="form-group">
+							<input (click)="login()" type="submit" value="Login" class="btn float-right login_btn">
+						</div>
+					</form>
+				</div>
 			</div>
 			<div class="card-footer">
-				<div class="d-flex justify-content-center links">
-					Don't have an account?<a href="#">Sign Up</a>
+
+				<div class="row" *ngIf="_registerService.token">
+					<div class="col-sm-12">You are logged in as {{ _registerService.user_id }}.<br />
+					  Token Expires: {{ _registerService.token_expires }}<br />
+					  <button (click)="refreshToken()" class="btn btn-primary">Refresh Token</button>
+					  <button (click)="logout()" class="btn btn-primary">Log Out</button>
+					</div>
 				</div>
-				<div class="d-flex justify-content-center">
-					<a href="#">Forgot your password?</a>
+
+				<div class="d-flex justify-content-center links">
+					Don't have an account?<a id="link" routerLink="/register">Sign Up</a>
 				</div>
 			</div>
 		</div>

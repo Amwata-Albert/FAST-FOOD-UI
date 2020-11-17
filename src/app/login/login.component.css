@@ -73,3 +73,8 @@ html,body{
         font-family: 'Special Elite', cursive;
         text-align: center;
     }
+
+    #link{
+        font-family: 'Special Elite', cursive;
+        color: rgb(5, 252, 252);
+    }
