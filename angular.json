@@ -119,6 +119,7 @@
           }
         }
       }
+<<<<<<< HEAD
     }
   },
   "defaultProject": "FastFood",
@@ -126,3 +127,8 @@
     "analytics": "c2518374-d177-4674-bdf8-cfe2941047f1"
   }
 }
+=======
+    }},
+  "defaultProject": "FastFood"
+}
+>>>>>>> 4a8ada90129f4c38157a0477c6d2e2ce3c2a07f0
