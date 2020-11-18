@@ -8,76 +8,81 @@ html,body{
     }
     
     .container{
-    height: 100vh;
-    align-content: center;
+        height: 100vh;
+        align-content: center;
+
     }
-    
+                                   
     .card{
-    height: 370px;
-    margin-top: auto;
-    margin-bottom: auto;
-    width: 400px;
-    background-color: rgba(0,0,0,0.5) !important;
+        height: 370px;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 400px;
+        background-color: rgba(0,0,0,0.5) !important;
+        box-shadow: 0 6px 10px rgb(65, 64, 64), 0 0 6px rgba(0, 0, 0, .05);
+        transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+        cursor: pointer;
     }
-    
-    .social_icon span:hover{
-    color: white;
-    cursor: pointer;
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgb(65, 64, 64), 0 4px 8px rgba(0, 0, 0, .06);
     }
     
     .card-header h3{
-    color: white;
-    }
-    
-    .social_icon{
-    position: absolute;
-    right: 20px;
-    top: -45px;
+        color: white;
     }
     
     .input-group-prepend span{
-    width: 50px;
-    background-color: #FFC312;
-    color: black;
-    border:0 !important;
+        width: 50px;
+        background-color: brown;
+        color: black;
+        border:0 !important;
     }
     
     input:focus{
-    outline: 0 0 0 0  !important;
-    box-shadow: 0 0 0 0 !important;
+        outline: 0 0 0 0  !important;
+        box-shadow: 0 0 0 0 !important;
     
     }
     
     .remember{
-    color: white;
-    }
-    
-    .remember input
-    {
-    width: 20px;
-    height: 20px;
-    margin-left: 15px;
-    margin-right: 5px;
+        color: white;
     }
     
     .login_btn{
-    color: black;
-    background-color: #FFC312;
-    width: 100px;
+        color: black;
+        background-color: brown;
+        width: 100px;
     }
     
     .login_btn:hover{
-    color: black;
-    background-color: white;
+        color: black;
+        background-color: white;
     }
     
     .links{
-    color: white;
+        color: white;
     }
     
     .links a{
-    margin-left: 4px;
+        margin-left: 4px;
     }
-    .top{
-        margin-top: 40%;
+
+    h3{
+        font-family: 'Special Elite', cursive;
+        text-align: center;
+    }
+
+    #link{
+        font-family: 'Special Elite', cursive;
+        color: rgb(5, 252, 252);
+    }
+
+    .bt{
+        margin-left: 2px;
+    }
+
+    .details{
+        color: rgb(3, 250, 250);
     }
