@@ -1,0 +1,11 @@
+.container-fluid{
+    background-image: url(https://specials-images.forbesimg.com/imageserve/5f5bb36af24c0de0d2ef8e58/960x0.jpg?fit=scale);
+    background-size: cover;
+    height: 100vh;
+}
+
+legend{
+    text-align: center;
+    color: white;
+    border-bottom: white 2px solid;
+}
