@@ -23,6 +23,8 @@
     "@ngx-progressbar/http-client": "^3.0.2",
     "rxjs": "~6.6.0",
     "rxjs-compat": "^6.6.3",
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^10.10.1",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
   },

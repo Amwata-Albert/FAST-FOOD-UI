@@ -54,7 +54,7 @@ public login(user) {
 public registerUser(user) {
   this.http.post(`${environment.apiUrl}/api/register/`, JSON.stringify(user), this.httpOptions).subscribe(
     data => {
-      alert('User registered successfully')
+      alert('User Registered Succesfully!')
       this.router.navigate(['/login'])
      
     },
