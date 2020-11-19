@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # FFF
+=======
+# FastFood
+>>>>>>> 6b1bbf15c8b2f3abd0e24cfb0c647e155215b980
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.
 

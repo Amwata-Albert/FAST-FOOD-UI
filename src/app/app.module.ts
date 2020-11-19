@@ -14,8 +14,6 @@ import { DefaultModule } from './layouts/default/default.module';
 // import { DashboardComponent } from './module/dashboard/dashboard.component';
 // import { MatButtonModule } from '@angular/material/button';
  
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +31,10 @@ import { DefaultModule } from './layouts/default/default.module';
     DefaultModule
     // MatButtonModule
   ],
+  // imports: [
+  //   BrowserModule,
+  //   AppRoutingModule
+  // ],
   providers: [],
   bootstrap: [AppComponent]
 })

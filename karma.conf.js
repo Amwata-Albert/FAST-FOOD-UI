@@ -16,7 +16,11 @@ module.exports = function (config) {
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
     coverageIstanbulReporter: {
+<<<<<<< HEAD
       dir: require('path').join(__dirname, './coverage/FFF'),
+=======
+      dir: require('path').join(__dirname, './coverage/FastFood'),
+>>>>>>> 6b1bbf15c8b2f3abd0e24cfb0c647e155215b980
       reports: ['html', 'lcovonly', 'text-summary'],
       fixWebpackSourcePaths: true
     },

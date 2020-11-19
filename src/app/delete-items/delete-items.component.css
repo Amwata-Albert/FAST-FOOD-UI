@@ -1,0 +1,14 @@
+body{
+    background-repeat: no-repeat;
+}
+body img{
+    height: 1200px;
+    width: 1000px;
+    margin-left: 10%;
+}
+.items{
+    margin-top: -90%;
+    color:brown;
+    font-size: 30px;
+    margin-left: 12%;
+}
