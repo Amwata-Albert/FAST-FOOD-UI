@@ -17,6 +17,7 @@ import { DefaultModule } from './layouts/default/default.module';
 @NgModule({
   declarations: [
     AppComponent,
+    
     // MealsComponent,
     // HeaderComponent,
     // FooterComponent,
