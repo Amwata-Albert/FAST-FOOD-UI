@@ -6,14 +6,13 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { OrderlistComponent } from './orderlist/orderlist.component';
-import { Orderlist2Component } from './orderlist2/orderlist2.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
     OrderlistComponent,
-    Orderlist2Component
+    
   ],
   imports: [
     BrowserModule,
