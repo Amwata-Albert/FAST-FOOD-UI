@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { from } from 'rxjs';
-import { Orderlist} from '../orderlist';
-import { Input, Output, EventEmitter } from '@angular/core';
+import {OrderlistService} from '../services/orderlist.service'
 
 @Component({
   selector: 'app-orderlist',
@@ -9,28 +7,27 @@ import { Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./orderlist.component.css']
 })
 export class OrderlistComponent implements OnInit {
-  
-  orderlists:Orderlist[]=[
-    new Orderlist(1,'Rice',2 , 'Kikuyu'),
-    new Orderlist(2,'Chips',5 , 'Kinoo'),
 
-  ]
-  @Input() orderlist: Orderlist;
-  @Output() isAccepted = new EventEmitter<boolean>();
+  public orderlist: any
 
-  orderAccepted(complete:boolean){
-    this.isAccepted
-    .emit(complete);
+  constructor(public _orderlistService: OrderlistService) { }
+
+  ngOnInit():void{
+    this._orderlistService.getCurrentOrder()
+    this.orderlist={
+      order_id:'',
+      food: '', 
+      quantity:'',
+      user:'',
+      address:'',
+      status:'',
+      order_timestamp:'',
+      amount:'',
+      // user:localStorage.current_userid
+    }
   }
-  @Output() isDeclined = new EventEmitter<boolean>();
-
-  orderDeclined(complete:boolean){
-    this.isDeclined
-    .emit(complete);
-  }
-  constructor() { }
-
-  ngOnInit(){
+  getCurrentOrder(){
+    this._orderlistService.getCurrentOrder()
   }
 
 }

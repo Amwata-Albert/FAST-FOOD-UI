@@ -2,11 +2,12 @@ import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { environment } from '../../environments/environment';
 import { Router } from '@angular/router';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Injectable({
   providedIn: 'root'
 })
-export class OrderlistServiceService {
+export class OrderlistService {
   
   // http options used for making API calls
   private httpOptions: any;
@@ -19,8 +20,8 @@ export class OrderlistServiceService {
     }
   }
 
-public getOrder() {
-  this.http.get(`${environment.apiUrl}/api/customer`, this.httpOptions).subscribe(
+public getCurrentOrder() {
+  this.http.get(`${environment.apiUrl}/api/currentorder`, this.httpOptions).subscribe(
     data => {
       this.orderlist=data
       console.log(data)       
@@ -30,7 +31,8 @@ public getOrder() {
       this.errors=true
         }
   );
-}
+      }
 
+  
 
 }
