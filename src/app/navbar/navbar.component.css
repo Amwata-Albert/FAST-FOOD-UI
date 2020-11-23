@@ -8,7 +8,7 @@
 }
 
 .flipkart-navbar-input {
-    margin-top: 2%;
+    margin-top: 4%;
     padding: 8px;
     border-radius: 18px;
     border: 0 none;
@@ -45,6 +45,23 @@
     height: 16px;
     vertical-align: middle;
     margin-right: 8px;
+}
+
+.login{
+    background-color: brown;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .23), inset 1px 1px 0 0 hsla(0, 0%, 100%, .2);
+    padding: 10px 0;
+    text-align: center;
+    height: 41px;
+    border-radius: 2px;
+    font-weight: 500;
+    width: 120px;
+    display: inline-block;
+    color: #FFFFFF;
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    outline: none;
 }
 
 .item-number {
@@ -141,4 +158,7 @@
 .sidenav-heading{
     font-size: 36px;
     color: #fff;
+}
+.tt{
+    font-family: 'Special Elite', cursive;
 }
