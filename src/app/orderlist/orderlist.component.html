@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="orderlist">
+    <h1> Order List </h1>
+    <hr>
+
+    <div class="row">
+      <div class="card" *ngFor='let orderlist of _orderlistService.orderlist, let i=index' col-md-6>
+        <div class="card-body">
+          <h3 class="card-title"> {{orderlist.order_id}} .{{orderlist.food}}</h3>
+          <p class="card-text">Quantity: {{orderlist.quantity}}</p>
+          <p class="card-text">Customer's Name: {{orderlist.user}}</p>
+          <p class="card-text">Customer's Address: {{orderlist.address}}</p>
+          <p class="card-text">Time: {{orderlist.order_timestamp}}</p>
+          <p class="card-text">Status: {{orderlist.status}}</p>
+          <p class="card-text">Cost: {{orderlist.amount}}</p>
+
+          <button class="button1" (click)='orderAccepted(true)'>Accept</button>
+          <button class="button2" (click)='orderDeclined(true)'>Decline</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
