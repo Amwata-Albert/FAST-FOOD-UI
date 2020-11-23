@@ -4,7 +4,7 @@
 }
 
 .row2 {
-    padding-bottom: 16px;
+    padding-bottom: 14px;
 }
 
 .flipkart-navbar-input {
@@ -161,4 +161,10 @@
 }
 .tt{
     font-family: 'Special Elite', cursive;
+}
+
+.ld{
+    background-image: url(https://images.unsplash.com/photo-1549248287-f371a6246ea6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+    background-size: cover;
+    height: 100vh;
 }
