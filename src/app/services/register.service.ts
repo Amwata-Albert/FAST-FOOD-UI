@@ -40,7 +40,7 @@ public login(user) {
     data => {
       this.updateData(data['access'],);
       this.refresh=data['refresh']
-      this.router.navigate(['/navbar'])
+      this.router.navigate(['/home'])
       
     },
     err => {

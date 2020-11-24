@@ -50,18 +50,19 @@
 .login{
     background-color: brown;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .23), inset 1px 1px 0 0 hsla(0, 0%, 100%, .2);
-    padding: 10px 0;
+    padding: 10px 2;
     text-align: center;
     height: 41px;
     border-radius: 2px;
     font-weight: 500;
-    width: 120px;
+    width: 60px;
     display: inline-block;
     color: #FFFFFF;
     text-decoration: none;
     color: inherit;
     border: none;
     outline: none;
+    margin-left: 4px;
 }
 
 .item-number {
@@ -167,4 +168,9 @@
     background-image: url(https://images.unsplash.com/photo-1549248287-f371a6246ea6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
     background-size: cover;
     height: 100vh;
+}
+
+.jumbotron{
+    height: 100vh;
+    background-color: rgba(195, 252, 252, 0.233);
 }
