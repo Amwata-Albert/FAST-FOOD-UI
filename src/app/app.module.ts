@@ -10,6 +10,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { OrdersComponent } from './orders/orders.component';
 import { OrderlistComponent } from './orderlist/orderlist.component';
 import { CommonModule } from "@angular/common";
+import { CustomerComponent } from './customer/customer.component';
+import { FoodlistComponent } from './foodlist/foodlist.component';
+
 
 @NgModule({
   declarations: [
@@ -18,8 +21,9 @@ import { CommonModule } from "@angular/common";
     LoginComponent,
     NavbarComponent,
     OrdersComponent,
-    OrderlistComponent
-    
+    OrderlistComponent,
+    CustomerComponent,
+    FoodlistComponent,
   ],
 
   imports: [
