@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DefaultComponent } from './layouts/default/default.component';
 import { DefaultModule } from './layouts/default/default.module';
+import { OrderComponent } from './order/order.component';
 // import { MealsComponent } from './modules/meals/meals.component';
 // import { HeaderComponent } from './shared/components/header/header.component';
 // import { FooterComponent } from './shared/components/footer/footer.component';
@@ -17,6 +18,7 @@ import { DefaultModule } from './layouts/default/default.module';
 @NgModule({
   declarations: [
     AppComponent,
+    OrderComponent,
     
     // MealsComponent,
     // HeaderComponent,
