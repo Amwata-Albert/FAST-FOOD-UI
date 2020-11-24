@@ -1,14 +1,14 @@
 <div class="container-fluid">
     <div class="container">
         <div class="row">
-            <legend>CUSTOMERS</legend>
+            <legend>Orders</legend>
             <div *ngFor='let customer of _customerService.customers,let i=index' class="col-md-6">
                 <div class="card border-danger mb-3">
-                    <div class="card-header bg-transparent border-danger">Name: {{customer.name}}</div>
+                    <div class="card-header bg-transparent border-danger">Name: {{Orders.name}}</div>
                     <div class="card-body text-danger">
-                      <p class="card-text">Email: {{customer.email}}</p>
+                      <p class="card-text">Email: {{Orders.email}}</p>
                     </div>
-                    <div class="card-footer bg-transparent border-danger">Contact: {{customer.contact}}</div>
+                    <div class="card-footer bg-transparent border-danger">Contact: {{Orders.contact}}</div>
                 </div>
             </div>
         </div>

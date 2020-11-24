@@ -3,29 +3,26 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { environment } from '../../environments/environment';
 import { Router } from '@angular/router';
 
-
 @Injectable({
   providedIn: 'root'
 })
-export class CustomerService {
+export class OrdersService {
 
-  // http options used for making API calls
   private httpOptions: any;
-  customers:any
+  orders:any
   errors:boolean=false
   
 
   constructor(private http:HttpClient,private router:Router) {
-  	this.httpOptions = {
+    this.httpOptions = {
       headers: new HttpHeaders({'Content-Type': 'application/json'})
     }
    }
 
-
-  public getCustomers() {
-    this.http.get(`${environment.apiUrl}/api/customer`, this.httpOptions).subscribe(
+   public getOrders() {
+    this.http.get(`${environment.apiUrl}/api/currentorder`, this.httpOptions).subscribe(
       data => {
-        this.customers=data
+        this.orders=data
         console.log(data)       
       },
       err => {
@@ -35,20 +32,17 @@ export class CustomerService {
     );
   }
 
-  public createCustomer(customer) {
-    this.http.post(`${environment.apiUrl}/api/customer`, customer, this.httpOptions).subscribe(
+  public createOrder(orders) {
+    this.http.post(`${environment.apiUrl}/api/currentorder`, orders, this.httpOptions).subscribe(
       data => {
-        this.getCustomers()
+        this.getOrders()
        	alert('Customer created successfully')
       },
       err => {
-      	console.log(typeof(customer))
+      	console.log(typeof(orders))
         console.log(err)
           }
     );
-  }
- 
 
-
- 
+}
 }
