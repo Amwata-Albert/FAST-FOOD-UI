@@ -13,7 +13,16 @@ import { DahsboardService } from 'src/app/modules/dahsboard.service';
 import { CurrentOrdersComponent } from 'src/app/modules/current-orders/current-orders.component';
 import { OrderHistoryComponent } from 'src/app/modules/order-history/order-history.component';
 import { CustomersComponent } from 'src/app/modules/customers/customers.component';
+import { MatTableModule } from '@angular/material/table';
+import {MatIconModule} from '@angular/material/icon'
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { FormsModule } from '@angular/forms';
+import {MatDialogConfig, MatDialogModule} from '@angular/material/dialog';
+import { MatFormField, MatFormFieldModule } from '@angular/material/form-field';
 
+
+// import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 
@@ -35,10 +44,19 @@ import { CustomersComponent } from 'src/app/modules/customers/customers.componen
     MatDividerModule,
     FlexLayoutModule,
     MatCardModule,
+    MatTableModule,
+    MatIconModule,
+    FormsModule,
+    MatDialogModule,
+    MatFormFieldModule,
     
+],
+  exports:[
+    MatDialogModule
   ],
   providers:[
     DahsboardService
-  ]
+  ],
+  entryComponents:[MealsComponent]
 })
 export class DefaultModule { }

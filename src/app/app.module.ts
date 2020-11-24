@@ -6,6 +6,12 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DefaultComponent } from './layouts/default/default.component';
 import { DefaultModule } from './layouts/default/default.module';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { MealsComponent } from './modules/meals/meals.component';
+
+ 
+// import { MatFormFieldModule } from '@angular/material/form-field';
 // import { MealsComponent } from './modules/meals/meals.component';
 // import { HeaderComponent } from './shared/components/header/header.component';
 // import { FooterComponent } from './shared/components/footer/footer.component';
@@ -17,6 +23,7 @@ import { DefaultModule } from './layouts/default/default.module';
 @NgModule({
   declarations: [
     AppComponent,
+  
     
     // MealsComponent,
     // HeaderComponent,
@@ -29,14 +36,20 @@ import { DefaultModule } from './layouts/default/default.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    DefaultModule
+    HttpClientModule,
+    FormsModule,
+    DefaultModule,
+    
+    // MatFormFieldModule,
     // MatButtonModule
   ],
+  
   // imports: [
   //   BrowserModule,
   //   AppRoutingModule
   // ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents:[MealsComponent]
 })
 export class AppModule { }

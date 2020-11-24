@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { from } from 'rxjs';
+import { MealsComponent } from 'src/app/modules/meals/meals.component';
+
 
 @Component({
   selector: 'app-default',
@@ -7,12 +11,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DefaultComponent implements OnInit {
   sideBarOpen = true;
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(){ }
 
   sideBarToggler(){
     this.sideBarOpen = !this.sideBarOpen
+  }
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(MealsComponent, {
+      width: '300px',
+      data: {}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(result)
+    });
   }
 
 }
