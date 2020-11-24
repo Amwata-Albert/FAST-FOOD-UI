@@ -1,12 +1,118 @@
+.container-fluid{
+    background-image: url(https://specials-images.forbesimg.com/imageserve/5f5bb36af24c0de0d2ef8e58/960x0.jpg?fit=scale);
+    background-size: cover;
+    height: 100vh;
+}
+
+legend{
+    text-align: center;
+    color: white;
+    border-bottom: white 2px solid;
+}
+   nav{
+       position: relative;
+       /* top: 40px;   */
+     }
+   nav>ul{
+    padding-right: 30px;
+    background-color: #5BC0DE;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+nav>ul>li>a{
+    text-transform: uppercase;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+  
+}
+
+
+
+
+#topic{
+    
+    /* background-image: url(./images/services.jpg); */
+    background-image: url(/assets/images/foodback.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 400px;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    padding-bottom: 0;
+    margin-top: 0;
+}
+#topic>h1{
+           font-size: 72px;
+           text-align: center;
+           color: white;
+           position: relative;
+           top: 21%;
+           font-family: 'Merriweather', serif; 
+}
+#services{display: flex;
+     flex-direction: column;
+     background-color: white;
+    margin-top: 5%;
+     width: 100%;
+     justify-content: space-between;
+}
+#services>.column{display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          margin: 5px;
+          height: 50%; 
+          
+                
+}
+#services>.column>div{
+            margin: 5px;
+            background-color: white;
+            width: 250px;
+            height: 300px;
+            padding-bottom: 10px;
+            text-align: center;
+            border-radius: 1%;
+            box-shadow: 1px 1px 5px black; 
+}
+#services>div>div>img{ width: 250px;
+                  height: 50%;                 
+}
+h2{
+    font-size: 24px;
+    font-family: 'Merriweather', serif;
+    font-family: 'Oswald', sans-serif;
+    color: #5BC0DE;;
+}
+#services>div>div:hover{ box-shadow: 0px 0px 20px black; }
+
+#icons>a{
+    text-transform: uppercase;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+}
+
+#icons{
+    background-color: brown;
+    padding: 10px;
+    text-align: center;
+}
 #flipkart-navbar {
     background-color: brown;
     color: #FFFFFF;
+    /* position: fixed; */
 }
-
 .row2 {
     padding-bottom: 14px;
 }
-
 .flipkart-navbar-input {
     margin-top: 4%;
     padding: 8px;
@@ -15,7 +121,6 @@
     outline: 0 none;
     font-size: 12px;
 }
-
 .cart-button {
     background-color: brown;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .23), inset 1px 1px 0 0 hsla(0, 0%, 100%, .2);
@@ -32,13 +137,11 @@
     border: none;
     outline: none;
 }
-
 .cart-button:hover{
     text-decoration: none;
     color: #fff;
     cursor: pointer;
 }
-
 .cart-svg {
     display: inline-block;
     width: 16px;
@@ -46,7 +149,6 @@
     vertical-align: middle;
     margin-right: 8px;
 }
-
 .login{
     background-color: brown;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .23), inset 1px 1px 0 0 hsla(0, 0%, 100%, .2);
@@ -64,7 +166,6 @@
     outline: none;
     margin-left: 4px;
 }
-
 .item-number {
     border-radius: 3px;
     background-color: rgba(0, 0, 0, .1);
@@ -76,37 +177,27 @@
     line-height: 12px;
     margin-left: 10px;
 }
-
-
-
 .links {
     color: #fff;
     text-decoration: none;
 }
-
 .links:hover {
     color: #fff;
     text-decoration: none;
 }
-
-
 .largenav {
     display: none;
 }
-
 .smallnav{
     display: block;
 }
-
 .smallsearch{
     margin-left: 15px;
     margin-top: 15px;
 }
-
 .menu{
     cursor: pointer;
 }
-
 @media screen and (min-width: 768px) {
     .largenav {
         display: block;
@@ -118,7 +209,6 @@
         margin: 0px;
     }
 }
-
 /*Sidenav*/
 .sidenav {
     height: 100%;
@@ -133,7 +223,6 @@
     box-shadow: 0 4px 8px -3px #555454;
     padding-top: 0px;
 }
-
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -142,58 +231,21 @@
     display: block;
     transition: 0.3s
 }
-
 .sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-    color: #fff;        
+    color: #fff;
 }
-
 @media screen and (max-height: 450px) {
   .sidenav a {font-size: 18px;}
 }
-
 .sidenav-heading{
     font-size: 36px;
     color: #fff;
 }
 .tt{
     font-family: 'Special Elite', cursive;
-}
-
-.ld{
-    background-image: url(https://images.unsplash.com/photo-1549248287-f371a6246ea6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
-    background-size: cover;
-    height: 100vh;
-}
-
-.jumbotron{
-    height: 100vh;
-    background-color: rgba(195, 252, 252, 0.233);
-}
-
-#topic{
-    
-    /* background-image: url(./images/services.jpg); */
-    background-image: url(/assets/images/foodback.jpg);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 400px;
-    width: 100%;
-    align-items: center;
-    position: relative;
-    padding-bottom: 0;
-    margin-top: 0;
-}
-#topic>h4{
-           font-size: 72px;
-           text-align: center;
-           color: white;
-           position: relative;
-           top: 21%;
-           font-family: 'Merriweather', serif; 
 }

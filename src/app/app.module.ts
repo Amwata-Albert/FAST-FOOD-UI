@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { OrdersComponent } from './orders/orders.component';
+import { OrderlistComponent } from './orderlist/orderlist.component';
+import { CommonModule } from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -14,6 +17,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     RegisterComponent,
     LoginComponent,
     NavbarComponent,
+    OrdersComponent,
+    OrderlistComponent
     
   ],
 
@@ -22,6 +27,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
