@@ -8,6 +8,7 @@ import { DefaultComponent } from './layouts/default/default.component';
 import { DefaultModule } from './layouts/default/default.module';
 import { OrderComponent } from './order/order.component';
 import { MealsComponent } from './meals/meals.component';
+import { NavbarComponent } from './navbar/navbar.component';
 // import { MealsComponent } from './modules/meals/meals.component';
 // import { HeaderComponent } from './shared/components/header/header.component';
 // import { FooterComponent } from './shared/components/footer/footer.component';
@@ -21,6 +22,7 @@ import { MealsComponent } from './meals/meals.component';
     AppComponent,
     OrderComponent,
     MealsComponent,
+    NavbarComponent,
     
     // MealsComponent,
     // HeaderComponent,
