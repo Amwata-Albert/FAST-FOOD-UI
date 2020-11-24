@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { OrderlistComponent } from './orderlist/orderlist.component'
+import { OrderlistComponent } from './orderlist/orderlist.component';
 
 
 
