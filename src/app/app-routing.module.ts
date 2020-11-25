@@ -12,10 +12,10 @@ import { FoodlistComponent } from './foodlist/foodlist.component'
 const routes: Routes = [
   { path: 'register', component: RegisterComponent},
   { path: 'login', component: LoginComponent},
-  { path: 'home', component: NavbarComponent},
+  { path: '', component: NavbarComponent},
   { path: 'orders', component: OrderlistComponent},
   { path: 'status', component: OrdersComponent},
-  { path: '', component: FoodlistComponent},
+  { path: 'fastfood', component: FoodlistComponent},
   
 ];
 
