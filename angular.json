@@ -124,6 +124,6 @@
   },
   "defaultProject": "FastFood",
   "cli": {
-    "analytics": false
+    "analytics": "af7d90ff-aa33-43f9-b402-c84cace32532"
   }
 }

@@ -12,6 +12,9 @@ import { OrderlistComponent } from './orderlist/orderlist.component';
 import { CommonModule } from "@angular/common";
 import { CustomerComponent } from './customer/customer.component';
 import { FoodlistComponent } from './foodlist/foodlist.component';
+import { OrderComponent } from './order/order.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MealsComponent } from './meals/meals.component';
 
 
 @NgModule({
@@ -24,6 +27,11 @@ import { FoodlistComponent } from './foodlist/foodlist.component';
     OrderlistComponent,
     CustomerComponent,
     FoodlistComponent,
+    OrderComponent,
+    MealsComponent,
+    NavbarComponent,
+  
+    
   ],
 
   imports: [
@@ -31,8 +39,11 @@ import { FoodlistComponent } from './foodlist/foodlist.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    CommonModule
+    CommonModule,
+    BrowserAnimationsModule,
   ],
+
+ 
   providers: [],
   bootstrap: [AppComponent]
 })
