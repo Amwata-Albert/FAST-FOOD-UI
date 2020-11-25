@@ -22,7 +22,7 @@ export class AddCartService {
 
 
   public getOrder() {
-    this.http.get(`${environment.apiUrl}/api/meals`, this.httpOptions).subscribe(
+    this.http.get(`${environment.apiUrl}/api/customer`, this.httpOptions).subscribe(
       data => {
         this.meals=data
         console.log(data)       
@@ -37,7 +37,7 @@ export class AddCartService {
 
 
   public createOrder(orders) {
-    this.http.post(`${environment.apiUrl}/api/meals`, orders, this.httpOptions).subscribe(
+    this.http.post(`${environment.apiUrl}/api/customer`, orders, this.httpOptions).subscribe(
       data => {
         this.getOrder()
        	alert('Order posted successfully')

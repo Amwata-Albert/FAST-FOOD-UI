@@ -18,9 +18,8 @@ export class OrderComponent implements OnInit {
    ngOnInit(): void {
   	this._addCartService.getOrder()
   	this.orders={
-  		name:'',
-      price:'',
-      category:'',
+  		address:'',
+      contact:'',
   		user:localStorage.current_userid
   	}
   }
