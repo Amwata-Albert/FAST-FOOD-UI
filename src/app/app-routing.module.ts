@@ -11,11 +11,11 @@ import { FoodlistComponent } from './foodlist/foodlist.component'
 
 const routes: Routes = [
   { path: 'register', component: RegisterComponent},
-  { path: '', component: LoginComponent},
+  { path: 'login', component: LoginComponent},
   { path: 'home', component: NavbarComponent},
   { path: 'orders', component: OrderlistComponent},
   { path: 'status', component: OrdersComponent},
-  { path: 'navbar', component: FoodlistComponent},
+  { path: '', component: FoodlistComponent},
   
 ];
 

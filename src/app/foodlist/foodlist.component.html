@@ -19,12 +19,17 @@
                 </a>
             </div>
             <div class="cart largenav col-sm-2" style="margin-top: 1%;">
-                <a href="/"><button class="login links">Login</button></a>
-                <a href="/"><button class="login links">Logout</button></a>
+                <a href="/login"><button class="login links">Login</button></a>
+                <a href=""><button class="login links">Logout</button></a>
             </div>
         </div>
     </div>
 </div>
+<!-- End of navbar -->
+<div id="topic">
+    <h4>Make your Order</h4>
+</div>
+
 <div class="container-fluid ld">
     <div class="container">
         <div class="jumbotron">
@@ -35,6 +40,7 @@
                     <div class="card-body">
                     <p class="card-text">Name:{{meal.name}}</p>
                     <p class="card-text">Price:{{meal.price}}</p>
+                    <button class="order">Order</button>
                     </div>
                 </div>
             </div>

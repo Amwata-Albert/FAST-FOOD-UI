@@ -142,11 +142,42 @@
     font-family: 'Special Elite', cursive;
 }
 .ld{
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd3EUA9cyhvG7qKtLNDsKKAOjiBjZs5ysEBg&usqp=CAU);
+    background-image: url(https://images.unsplash.com/photo-1549248287-f371a6246ea6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
     background-size: cover;
     height: 100vh;
 }
+
 .jumbotron{
     height: 100vh;
     background-color: rgba(195, 252, 252, 0.233);
+}
+
+#topic{
+    
+    /* background-image: url(./images/services.jpg); */
+    background-image: url(/assets/images/foodback.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 400px;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    padding-bottom: 0;
+    margin-top: 0;
+}
+#topic>h4{
+           font-size: 72px;
+           text-align: center;
+           color: white;
+           position: relative;
+           top: 21%;
+           font-family: 'Merriweather', serif; 
+}
+
+.order{
+    background-color: brown;
+    color: white;
+    border-radius: 4px;
+    border: none;
 }
