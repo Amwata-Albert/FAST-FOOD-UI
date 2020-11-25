@@ -5,7 +5,8 @@ import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { OrderlistComponent } from './orderlist/orderlist.component';
 import { OrdersComponent } from './orders/orders.component';
-import { FoodlistComponent } from './foodlist/foodlist.component'
+import { FoodlistComponent } from './foodlist/foodlist.component';
+import { OrderComponent } from './order/order.component'
 
 
 
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'orders', component: OrderlistComponent},
   { path: 'status', component: OrdersComponent},
   { path: 'fastfood', component: FoodlistComponent},
+  { path: 'cart', component: OrderComponent},
   
 ];
 
