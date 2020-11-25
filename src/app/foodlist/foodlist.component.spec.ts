@@ -1,21 +1,20 @@
-
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { MatTableModule } from '@angular/material/table';
-import { MealsComponent } from './meals.component';
 
-describe('MealsComponent', () => {
-  let component: MealsComponent;
-  let fixture: ComponentFixture<MealsComponent>;
+import { FoodlistComponent } from './foodlist.component';
+
+describe('FoodlistComponent', () => {
+  let component: FoodlistComponent;
+  let fixture: ComponentFixture<FoodlistComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MealsComponent ]
+      declarations: [ FoodlistComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MealsComponent);
+    fixture = TestBed.createComponent(FoodlistComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

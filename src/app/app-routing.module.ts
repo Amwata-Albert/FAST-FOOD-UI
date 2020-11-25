@@ -1,39 +1,24 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { DefaultComponent } from './layouts/default/default.component';
-import { DashboardComponent } from './module/dashboard/dashboard.component';
-import { CurrentOrdersComponent } from './modules/current-orders/current-orders.component';
-import { CustomersComponent } from './modules/customers/customers.component';
-import { MealsComponent } from './modules/meals/meals.component';
-import { OrderHistoryComponent } from './modules/order-history/order-history.component';
-
-const routes: Routes = [{
-  path: '', 
-  component:  DefaultComponent,
-  children: [
-    {path: '', component: DashboardComponent},
-    {path: 'meals', component: MealsComponent},
-    {path: 'Customers', component: CustomersComponent},
-    {path: 'Current', component: CurrentOrdersComponent},
-    {path: 'order', component: OrderHistoryComponent},
-    
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { OrderlistComponent } from './orderlist/orderlist.component';
+import { OrdersComponent } from './orders/orders.component';
+import { FoodlistComponent } from './foodlist/foodlist.component'
 
 
-    {
-      path: '',
-      redirectTo: 'posts',
-      pathMatch: 'full'
-    }
-  ]
-}];
 
-// const routes: Routes = [
-//   { path: '', component: DefaultComponent,
-//    children:[{
-//     path:'', component: DashboardComponent
-//   }
-// ]},
-// ];
+const routes: Routes = [
+  { path: 'register', component: RegisterComponent},
+  { path: '', component: LoginComponent},
+  { path: 'home', component: NavbarComponent},
+  { path: 'orders', component: OrderlistComponent},
+  { path: 'status', component: OrdersComponent},
+  { path: 'navbar', component: FoodlistComponent},
+  
+];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

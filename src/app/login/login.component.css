@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+html,body{
+    background-image: url('https://cdn.pixabay.com/photo/2017/02/15/10/39/salad-2068220_960_720.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Numans', sans-serif;
+    }
+    
+    .container{
+        height: 100vh;
+        align-content: center;
+
+    }
+                                   
+    .card{
+        height: 370px;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 400px;
+        background-color: rgba(0,0,0,0.5) !important;
+        box-shadow: 0 6px 10px rgb(65, 64, 64), 0 0 6px rgba(0, 0, 0, .05);
+        transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+        cursor: pointer;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgb(65, 64, 64), 0 4px 8px rgba(0, 0, 0, .06);
+    }
+    
+    .card-header h3{
+        color: white;
+    }
+    
+    .input-group-prepend span{
+        width: 50px;
+        background-color: brown;
+        color: black;
+        border:0 !important;
+    }
+    
+    input:focus{
+        outline: 0 0 0 0  !important;
+        box-shadow: 0 0 0 0 !important;
+    
+    }
+    
+    .remember{
+        color: white;
+    }
+    
+    .login_btn{
+        color: black;
+        background-color: brown;
+        width: 100px;
+    }
+    
+    .login_btn:hover{
+        color: black;
+        background-color: white;
+    }
+    
+    .links{
+        color: white;
+    }
+    
+    .links a{
+        margin-left: 4px;
+    }
+
+    h3{
+        font-family: 'Special Elite', cursive;
+        text-align: center;
+    }
+
+    #link{
+        font-family: 'Special Elite', cursive;
+        color: rgb(5, 252, 252);
+    }
+
+    .bt{
+        margin-left: 2px;
+    }
+
+    .details{
+        color: rgb(3, 250, 250);
+    }
