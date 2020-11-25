@@ -36,3 +36,8 @@
 .error{
     color: white;
 }
+
+.btn-block{
+    background-color: brown;
+    color: white;
+}
