@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "FastFood"
+    }
+  },
+  "defaultProject": "FastFood",
+  "cli": {
+    "analytics": "af7d90ff-aa33-43f9-b402-c84cace32532"
+  }
 }
