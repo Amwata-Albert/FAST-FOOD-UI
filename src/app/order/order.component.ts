@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AddCartService } from '../services/add-cart.service';
 
 @Component({
   selector: 'app-order',
@@ -8,9 +9,25 @@ import { Component, OnInit } from '@angular/core';
 export class OrderComponent implements OnInit {
  
 
-  constructor() { }
+  public orders:any;
 
-  ngOnInit(): void {
+  constructor(public _addCartService: AddCartService) {
+
+   }
+
+   ngOnInit(): void {
+  	this._addCartService.getOrder()
+  	this.orders={
+  		name:'',
+      price:'',
+      category:'',
+  		user:localStorage.current_userid
+  	}
+  }
+
+
+  addOrder(){
+  	this._addCartService.createOrder(this.orders)
   }
 
 }
