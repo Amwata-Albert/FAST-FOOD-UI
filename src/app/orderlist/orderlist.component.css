@@ -201,3 +201,7 @@ img{
     padding-left: 20%;
     width: 20%;
 }
+
+.card-body{
+    color: brown;
+}
